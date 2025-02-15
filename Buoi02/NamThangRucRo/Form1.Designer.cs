@@ -34,6 +34,8 @@
             txtThang = new TextBox();
             btnKiemTra = new Button();
             txtKetQua = new TextBox();
+            btnNhapLai = new Button();
+            btnThoat = new Button();
             SuspendLayout();
             // 
             // label1
@@ -88,11 +90,33 @@
             txtKetQua.Size = new Size(682, 118);
             txtKetQua.TabIndex = 5;
             // 
+            // btnNhapLai
+            // 
+            btnNhapLai.Location = new Point(566, 63);
+            btnNhapLai.Name = "btnNhapLai";
+            btnNhapLai.Size = new Size(188, 58);
+            btnNhapLai.TabIndex = 6;
+            btnNhapLai.Text = "Nhập lại";
+            btnNhapLai.UseVisualStyleBackColor = true;
+            btnNhapLai.Click += btnNhapLai_Click;
+            // 
+            // btnThoat
+            // 
+            btnThoat.Location = new Point(566, 160);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(188, 58);
+            btnThoat.TabIndex = 7;
+            btnThoat.Text = "Thoát";
+            btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += btnThoat_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 487);
+            Controls.Add(btnThoat);
+            Controls.Add(btnNhapLai);
             Controls.Add(txtKetQua);
             Controls.Add(btnKiemTra);
             Controls.Add(txtThang);
@@ -114,5 +138,7 @@
         private TextBox txtThang;
         private Button btnKiemTra;
         private TextBox txtKetQua;
+        private Button btnNhapLai;
+        private Button btnThoat;
     }
 }

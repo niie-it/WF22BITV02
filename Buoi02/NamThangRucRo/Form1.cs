@@ -70,5 +70,23 @@
         {
 
         }
+
+        private void btnNhapLai_Click(object sender, EventArgs e)
+        {
+            //reset giá trị 3 textbox
+            txtNam.Clear();
+            txtThang.Text = "";
+            txtKetQua.Clear();
+            txtNam.Focus();//đưa dấu nháy vô ô Năm
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            var traLoi = MessageBox.Show("Đóng chương trình", "Hỏi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(traLoi == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
